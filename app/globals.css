@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #18181B;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar chic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF1F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #FBA1BF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #EE2F74;
+}
+
+/* Glassmorphism glam */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(254, 205, 220, 0.5);
+}
+
+.pink-gradient {
+  background: linear-gradient(135deg, #EE2F74 0%, #F43F5E 50%, #FB7185 100%);
+}
+
+.hot-pink-gradient {
+  background: linear-gradient(135deg, #D9165C 0%, #EE2F74 50%, #F43F5E 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #D97706 100%);
+}
+
+.badge-layaway {
+  background: linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 100%);
+  border: 1px solid #FBCFE8;
+  color: #BE185D;
+}
